@@ -1,8 +1,5 @@
 package gui;
 
-import javax.swing.JOptionPane;
-
-import com.sudoplay.joise.module.Module;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -41,26 +38,4 @@ public abstract class NoiseModuleController extends AnchorPane {
 	public int getModuleId() {
 		return moduleId;
 	}
-	
-	protected float validateStringAsFloat(String s) {
-		try {
-			return Float.parseFloat(s);
-		} catch (NumberFormatException e) {
-			JOptionPane.showMessageDialog(null, s + " is not a valid float value.", "Parse Error", JOptionPane.ERROR_MESSAGE);
-		}
-		
-		return Float.NaN;
-	}
-	
-	protected int validateStringAsInt(String s) {
-		try {
-			return Integer.parseInt(s);
-		} catch (NumberFormatException e) {
-			JOptionPane.showMessageDialog(null, s + " is not a valid integer value.", "Parse Error", JOptionPane.ERROR_MESSAGE);
-		}
-		
-		return 0;
-	}
-	
-	public abstract Module getModule();
 }

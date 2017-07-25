@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.NoiseModuleCombinerController">
+   <children>
+      <Pane minWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox>
+               <children>
+                  <HBox prefWidth="141.0">
+                     <children>
+                        <Button fx:id="numberButton" mnemonicParsing="false" text="#" />
+                        <ChoiceBox fx:id="combinationType" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="8.0" right="8.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                        <Button fx:id="removeButton" mnemonicParsing="false" text="X" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" text="Module 1" />
+                        <ChoiceBox fx:id="module1Choice" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" text="Module 2" />
+                        <ChoiceBox fx:id="module2Choice" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

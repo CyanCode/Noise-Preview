@@ -17,10 +17,18 @@
     </plugins>
   </build>
   <dependencies>
-  	<dependency>
+  	<dependency> 
   		<groupId>com.sudoplay.joise</groupId>
   		<artifactId>joise</artifactId>
-  		<version>1.0.5</version>
   	</dependency>
   </dependencies>
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>com.sudoplay.joise</groupId>
+  			<artifactId>joise</artifactId>
+  			<version>1.0.5</version>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
 </project>

@@ -15,11 +15,11 @@ public class Canvas extends JPanel {
 	private static final float SCALE = 1.0f;
 	private BufferedImage image;
 
-	public Canvas(int width, int height) {
+	Canvas(int width, int height) {
 		image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
 	}
 
-	public void updateImage(Module mod) {
+	void updateImage(Module mod) {
 		int width = image.getWidth();
 		int height = image.getHeight();
 		float px, py, r;

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxWidth="1.7976931348623157E308" minWidth="285.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.NoiseModuleFractalController">
+   <children>
+      <VBox maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button fx:id="numberButton" mnemonicParsing="false" text="#" />
+                  <ChoiceBox fx:id="noiseType" maxWidth="1.7976931348623157E308" minWidth="140.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+                  <Button fx:id="previewButton" minWidth="57.0" mnemonicParsing="false" text="Preview">
+                     <HBox.margin>
+                        <Insets right="8.0" /> 
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="removeButton" mnemonicParsing="false" text="X" />
+               </children>
+            </HBox>
+            <TextField fx:id="seedTextField" maxWidth="1.7976931348623157E308" minWidth="269.0" promptText="Seed">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="lacunarityTextField" maxWidth="1.7976931348623157E308" minWidth="269.0" promptText="Lacunarity">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="octaveCountTextField" maxWidth="1.7976931348623157E308" minWidth="269.0" promptText="Octave Count">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="gainTextField" maxWidth="1.7976931348623157E308" minWidth="269.0" promptText="Gain">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="18.0" top="8.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
